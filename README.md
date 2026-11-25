@@ -1,24 +1,36 @@
-# Resqmesh Steady Signal
+# ResQMesh
+### Emergency Communication Support System
 
-Implement exactly the screenshot and nothing else
+ResQMesh is an emergency SOS communication support project designed to help users create and share emergency alerts.
 
-This project was built with [Lovable](https://lovable.dev).
+## Features
+- SOS alert creation
+- Emergency category selection
+- Location and message details
+- SOS history
+- Local Wi-Fi synchronization through a Node.js backend
+- Node and responder interface
 
-## Build with Lovable
+## Technology Used
+- React
+- TypeScript
+- Node.js
+- Vite
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/1942ef72-fb55-4b18-80a4-400a5a0173a4).
+## Current Scope
+SOS records can be synchronized between devices connected to the same local Wi-Fi network through a local backend server.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Bluetooth, Wi-Fi Direct and automatic multi-hop mesh communication are planned for future development.
 
-## Development
+## Run Locally
+Install dependencies:
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+npm install
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+Start the backend:
+
+node server.cjs
+
+Start the frontend:
+
+npm run dev -- --host 0.0.0.0
